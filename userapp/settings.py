@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'userapi.apps.Userapiconfig',
+    'userapi.apps.UserapiConfig',
 ]
 CORS_ALLOWED_ALL_ORIGINS= True
 MIDDLEWARE = [
@@ -118,7 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_FILES_DIRS = [OS.path.join(BASE_DIR, 'static')]
+STATIC_FILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 MEDIA_URL = '/image/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'image')
 # Default primary key field type
