@@ -9,7 +9,7 @@ GENDER_CHOICES=(
     ('F','Female'),
 
 )
-class Profile(models.Model):
+class Profile (models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE)
     fullname= models.CharField(max_length=255)
     phone= models.CharField(max_length=13,blank=True, null=True)
